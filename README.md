@@ -1,7 +1,7 @@
-#Une Introduction au design génératif
+# Une Introduction au design génératif
 
-##I. Introduction
-###Objectifs du workshop
+## I. Introduction
+### Objectifs du workshop
 
 1. Une première approche de la programmation.
  
@@ -15,7 +15,7 @@
    - jeux
    - ...
 
-###p5js vs processing.org
+### p5js vs processing.org
 * Librairie javascript: 
 
    **Javascript** : = le langage de programmation du web. Est interprété par le navigateur (firefox, chrome…).
