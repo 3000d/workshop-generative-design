@@ -279,6 +279,9 @@ https://editor.p5js.org/drskullster/sketches/Nd6XcUk6X
 - <http://gregberger.github.io/>
 - Designing Generative Systems ([playlist youtube](https://www.youtube.com/playlist?list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf))
 
+-- 
+
 - https://editor.p5js.org/drskullster/sketches/2nDv6Mafo
+- https://editor.p5js.org/drskullster/sketches/48gTEeqgj
         
     
