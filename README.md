@@ -268,6 +268,10 @@ Cette fonction permet de récupérer le contenu d’un fichier json (local ou di
 	- https://github.com/processing/p5.js/wiki/JavaScript-basics : les bases de javascript (en anglais)
 
     
+## Template p5.js
+
+https://editor.p5js.org/drskullster/sketches/Nd6XcUk6X
+
 ## Exemples et inspiration
 
 - <http://www.lyceelecorbusier.eu/p5js/?page_id=2861>
@@ -275,6 +279,6 @@ Cette fonction permet de récupérer le contenu d’un fichier json (local ou di
 - <http://gregberger.github.io/>
 - Designing Generative Systems ([playlist youtube](https://www.youtube.com/playlist?list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf))
 
-
+- https://editor.p5js.org/drskullster/sketches/2nDv6Mafo
         
     
