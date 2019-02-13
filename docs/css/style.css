@@ -1,0 +1,55 @@
+ body{
+     font-family: 'Lato', sans-serif;
+     font-size: 1.8em;
+     background: #3000d0;
+     color: #DDDDDD;
+ }
+ a {
+     color: #D0BC00;
+ }
+.step {
+    min-width: 700px;
+    /* border: 1px solid #3000d0; */
+    text-align: center;
+    min-height: auto;
+}
+.step li {
+    text-align: left;
+}
+.step > .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.step code {
+    text-align: left;
+}
+#timetable ul {
+    list-style: none;
+} 
+#timetable li {
+    margin-bottom: 15px;
+}
+#timetable strong{
+    color: #D0BC00;
+    font-size: 0.8em;
+    margin-right: 50px;
+}
+#logo-p5 {
+    background: #FFFFFF;
+    padding: 10px 4px 0px 0px;
+}
+.step .logos {
+    display: flex;
+    justify-content: space-around;
+    
+    background: RGBA(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+}
+.step .logos img{
+    
+    width: 341px;
+    
+}
+

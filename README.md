@@ -15,14 +15,14 @@
    - jeux
    - ...
 
-### p5js vs processing.org
+### p5js && Processing.org
 * Librairie javascript: 
 
-   **Javascript** : = le langage de programmation du web. Est interprété par le navigateur (firefox, chrome…).
+   **Javascript** : Le langage de programmation du web. Est interprété par le navigateur (firefox, chrome…).
 
    **librairie** : ensemble de fonctionnalités mises à disposition par d’autres développeurs
 
-* Page web:
+* Orienté web:
 
    p5js a été conçu pour fonctionner au sein d’une page web, dans un élément html5 spécifique (canvas) qui peut afficher des éléments graphiques.
    
@@ -141,7 +141,7 @@ Une bibliothèque est un ensemble de fonctions ou de classes écrites par d'autr
 
 ## III. Découvrir p5js
 
-### Premiers pas
+### Structure d'un Sketch
 
    **`setup()` - `draw()`** : fonctions mises à disposition par la librairie (p5.js). Elles doivent être implémentées par l'utilisateur et permettent 1. de configurer le sketch (*setup*) 2. de définir définir le code qui sera exécuté dans la boucle d'animation (*draw*)
    
@@ -157,9 +157,9 @@ origine (0,0)
    **dessiner un point** : `point(x,y);`
 
 
-###Formes
+### Formes
 
-####Primitives 2d
+#### Primitives 2d
 - `line(x1, y1, x2,y2)`
 
 - `ellipse(x, y, l, h)`
@@ -207,13 +207,26 @@ origine (0,0)
 
 - Le background
 
-   Redéfinir la couleur de fond à chaque frame permet de partir d’un canvas vierge => simuler le mouvement
+   Redéfinir la couleur de fond à chaque frame permet de partir d’un canvas vierge. Combiné à un changeemnt de la position des éléments, il est possible de simuler le mouvement
    
 
 ### Interaction
-mousePressed() / mouseReleased() : fonctions dont l'implémentation est confiée à  définir, au même titre que setup() ou draw()
-keyPressed()
-mouseIsPressed : variable au même titre que width ou height
+`mousePressed()` / `mouseReleased()` / `keyPressed()` : fonctions dont l'implémentation est confiée à  définir, au même titre que setup() ou draw(). Ces fonctions sont appelées au moment où l'action se produit et le code est exécuté à ce moment-là.
+
+`mouseIsPressed` : variable au même titre que `width` ou `height`.  Permet de connaître l'état du périphérique à un moment donné. Cet état (`true`/`false`) pourra servir de test dans une structure conditionnelle.
+
+```javascript
+//... dans `draw()` 
+if(mouseIsPressed){
+   // faire quelque chose si la souris est cliquée
+}
+
+//... en dehors de `setup()`et de `draw()`
+function mousePressed(){
+   // faire quelque chose au moment où la souris est cliquée
+   background(0);
+}
+```
 
 ### Créer et utiliser des éléments html 
 p5.js met à notre disposition des librairies supplémentaires qu’il est possible d’inclure dans nos sketches. C’est le cas de p5.dom.js.
@@ -251,15 +264,15 @@ Cette fonction permet de récupérer le contenu d’un fichier json (local ou di
 - Dan Shiffman
 
    Cofondateur de la Processing Foundation, professeur à l’Université de New-York (ITP), auteur de plusieurs ouvrages sur processing et d’une longue série de tutoriels vidéos :
-	- youtube : https://www.youtube.com/user/shiffman 
-	- kadenze: https://www.kadenze.com/courses/the-nature-of-code/info (avancé)
-	- github : https://github.com/CodingTrain/Rainbow-Code 
-	- shiffman.net : http://shiffman.net/ 
+	- youtube : <https://www.youtube.com/user/shiffman>
+	- kadenze: <https://www.kadenze.com/courses/the-nature-of-code/info> (avancé)
+	- github : <https://github.com/CodingTrain/Rainbow-Code>
+	- shiffman.net : <http://shiffman.net/>
 
 - P5js.org
 
    La documentation officielle est le meilleur endroit pour trouver des infos sur la manière d’utiliser la librairie
-	- http://p5js.org/reference 
+	- <http://p5js.org/reference>
 
 - **Divers**
 	- http://www.lyceelecorbusier.eu/p5js/ : un cours complet sur p5js (en français, s’il vous plait!)
@@ -277,7 +290,7 @@ https://editor.p5js.org/drskullster/sketches/Nd6XcUk6X
 - <http://www.lyceelecorbusier.eu/p5js/?page_id=2861>
 - <https://www.openprocessing.org>
 - <http://gregberger.github.io/>
-- Designing Generative Systems ([playlist youtube](https://www.youtube.com/playlist?list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf))
+- Designing Generative Systems ([playlist youtube](https://www.youtube.com/watch?v=rTqvf0BkTNE&list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf0))
 
 -- 
 
