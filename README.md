@@ -258,43 +258,59 @@ Cette fonction permet de récupérer le contenu d’un fichier json (local ou di
 ## Le texte dans p5.js
 
 ## Ressources et documentation
-- MDN
 
-   Le portail de documentation de la fondation Mozilla (qui édite le navigateur Firefox)  https://developer.mozilla.org/fr/docs/Web/JavaScript 
-- Dan Shiffman
+### LA playlist youtue pour les débutants
+<https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA>
 
-   Cofondateur de la Processing Foundation, professeur à l’Université de New-York (ITP), auteur de plusieurs ouvrages sur processing et d’une longue série de tutoriels vidéos :
-	- youtube : <https://www.youtube.com/user/shiffman>
-	- kadenze: <https://www.kadenze.com/courses/the-nature-of-code/info> (avancé)
-	- github : <https://github.com/CodingTrain/Rainbow-Code>
-	- shiffman.net : <http://shiffman.net/>
+### MDN 
+Le portail de documentation de la fondation Mozilla (qui édite le navigateur Firefox)  <https://developer.mozilla.org/fr/docs/Web/JavaScript>
 
-- P5js.org
 
+### Dan Shiffman
+
+Cofondateur de la Processing Foundation, professeur à l’Université de New-York (ITP), auteur de plusieurs ouvrages sur processing et d’une longue série de tutoriels vidéos
+
+- youtube : <https://www.youtube.com/user/shiffman>
+- kadenze: <https://www.kadenze.com/courses/the-nature-of-code/info> (avancé)
+- github : <https://github.com/CodingTrain/Rainbow-Code>
+- shiffman.net : <http://shiffman.net/>
+  
+### p5js.org
    La documentation officielle est le meilleur endroit pour trouver des infos sur la manière d’utiliser la librairie
 	- <http://p5js.org/reference>
+	- Une Cheat Sheet regroupant les principales fonctionnalités de p5.js pour débuter <https://github.com/bmoren/p5js-cheat-sheet/blob/master/p5cheatsheet.pdf>
 
-- **Divers**
-	- http://www.lyceelecorbusier.eu/p5js/ : un cours complet sur p5js (en français, s’il vous plait!)
-	- https://github.com/processing/p5.js/wiki/Education les différentes ressouces concernant l’apprentissage de p5.js sur le wiki de p5 lui-même.
-	- Getting started with p5js : PDF (en anglais, sur demande)
-	- https://github.com/processing/p5.js/wiki/JavaScript-basics : les bases de javascript (en anglais)
+### **Divers**
+- <http://www.lyceelecorbusier.eu/p5js/<> : un cours complet sur p5js (en français, s’il vous plait!)
+- <https://github.com/processing/p5.js/wiki/Education> les différentes ressouces concernant l’apprentissage de p5.js sur le wiki de p5 lui-même.
+- Getting started with p5js : PDF (en anglais, sur demande)
+- <https://github.com/processing/p5.js/wiki/JavaScript-basics> : les bases de javascript (en anglais)
 
+### **Listes de ressources**
+  - <https://timrodenbroeker.de/resources/>
+  - <https://drive.google.com/drive/folders/1OQxKwWLtWa7ZonSRS3qqGL8NxL64wBN7>
+
+### **Groupes Facebook**
+  - [Generative Design Research Network](https://www.facebook.com/groups/1477342445702248/)
+  - [Creative Coding with Processing and P5.js](https://www.facebook.com/groups/creativecodingp5)
+  - [Crazy cool developers](https://www.facebook.com/groups/1654174208149569)
+  - [Procedural / Generative Art](https://www.facebook.com/groups/procgenart)
+  - [AN-Arts²](https://www.facebook.com/groups/185086521516707)
+  - [Creative Coding and Generative Art](https://www.facebook.com/groups/505917996135466)
     
 ## Template p5.js
 
-https://editor.p5js.org/drskullster/sketches/Nd6XcUk6X
+<https://editor.p5js.org/drskullster/sketches/Nd6XcUk6X>
 
 ## Exemples et inspiration
 
 - <http://www.lyceelecorbusier.eu/p5js/?page_id=2861>
 - <https://www.openprocessing.org>
-- <http://gregberger.github.io/>
 - Designing Generative Systems ([playlist youtube](https://www.youtube.com/watch?v=rTqvf0BkTNE&list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf0))
 
--- 
+---
 
-- https://editor.p5js.org/drskullster/sketches/2nDv6Mafo
-- https://editor.p5js.org/drskullster/sketches/48gTEeqgj
+- <https://editor.p5js.org/drskullster/sketches/2nDv6Mafo>
+- <https://editor.p5js.org/drskullster/sketches/48gTEeqgj>
         
     
