@@ -307,6 +307,7 @@ Cofondateur de la Processing Foundation, professeur à l’Université de New-Yo
 - <http://www.lyceelecorbusier.eu/p5js/?page_id=2861>
 - <https://www.openprocessing.org>
 - Designing Generative Systems ([playlist youtube](https://www.youtube.com/watch?v=rTqvf0BkTNE&list=PLyRZnpOSgMj3K8AV2I6UldnvTj6d_Zrf0))
+- https://www.pinterest.com/drskullster/generative-typography/
 
 ---
 
