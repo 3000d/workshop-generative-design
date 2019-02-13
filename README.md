@@ -310,7 +310,12 @@ Cofondateur de la Processing Foundation, professeur à l’Université de New-Yo
 
 ---
 
-- <https://editor.p5js.org/drskullster/sketches/2nDv6Mafo>
-- <https://editor.p5js.org/drskullster/sketches/48gTEeqgj>
+- Noise: <https://editor.p5js.org/drskullster/sketches/2nDv6Mafo>
+- Lines: <https://editor.p5js.org/drskullster/sketches/48gTEeqgj>
+- Lines 2: https://editor.p5js.org/drskullster/sketches/JXLjbY3jp 
+- Lines 3: https://editor.p5js.org/drskullster/sketches/MHDb5x0V9
+- Letter Waves: https://editor.p5js.org/drskullster/sketches/ALhFN7Qxx
+- Blend: https://editor.p5js.org/drskullster/sketches/MfXSUReqH
+- Blend 2: https://editor.p5js.org/drskullster/sketches/U4YzxkoOa
         
     
