@@ -7,18 +7,24 @@
  a {
      color: #D0BC00;
  }
+ strong{
+    color: #D0BC00;
+
+ }
 .step {
-    min-width: 700px;
-    /* border: 1px solid #3000d0; */
+    min-width: 900px;
+    /* border: 1px solid rgb(235, 221, 99); */
     text-align: center;
     min-height: auto;
+    ;
 }
-.step li {
+.step ul {
     text-align: left;
+    
 }
 .step > .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .step code {
@@ -31,7 +37,6 @@
     margin-bottom: 15px;
 }
 #timetable strong{
-    color: #D0BC00;
     font-size: 0.8em;
     margin-right: 50px;
 }
@@ -42,14 +47,13 @@
 .step .logos {
     display: flex;
     justify-content: space-around;
-    
+
     background: RGBA(255, 255, 255, 0.9);
     border-radius: 5px;
     padding: 10px;
 }
-.step .logos img{
-    
-    width: 341px;
+.step .logos img{  
+    width: 1000px;
     
 }
 

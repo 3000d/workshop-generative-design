@@ -193,6 +193,12 @@ origine (0,0)
 
    il est possible d'utiliser des *variables* pour stocker la valeur d'une couleur. Exemple: `var rouge = color(255,0,0);`
 
+**mode couleur**
+Par défaut, le mode couleur est RGB, il est possible de changer ce comportement pour passer p5 en mode HSB (teinte, saturation, luminosité) en utilisant la fonction
+    colorMode(HSB);
+
+> Attention la valeur de la teinte est comprise entre 0 et 360 (cela facilite la sélection dans la roue colorimétrique en utilisant un angle)
+
 ### Variables mises à disposition par p5.js
 
     
@@ -277,11 +283,12 @@ Cofondateur de la Processing Foundation, professeur à l’Université de New-Yo
   
 ### p5js.org
    La documentation officielle est le meilleur endroit pour trouver des infos sur la manière d’utiliser la librairie
+
 	- <http://p5js.org/reference>
 	- Une Cheat Sheet regroupant les principales fonctionnalités de p5.js pour débuter <https://github.com/bmoren/p5js-cheat-sheet/blob/master/p5cheatsheet.pdf>
 
 ### **Divers**
-- <http://www.lyceelecorbusier.eu/p5js/<> : un cours complet sur p5js (en français, s’il vous plait!)
+- <http://www.lyceelecorbusier.eu/p5js/> : un cours complet sur p5js (en français, s’il vous plait!)
 - <https://github.com/processing/p5.js/wiki/Education> les différentes ressouces concernant l’apprentissage de p5.js sur le wiki de p5 lui-même.
 - Getting started with p5js : PDF (en anglais, sur demande)
 - <https://github.com/processing/p5.js/wiki/JavaScript-basics> : les bases de javascript (en anglais)
