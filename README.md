@@ -328,5 +328,6 @@ Cofondateur de la Processing Foundation, professeur à l’Université de New-Yo
 - Letter Waves: https://editor.p5js.org/drskullster/sketches/ALhFN7Qxx
 - Blend: https://editor.p5js.org/drskullster/sketches/MfXSUReqH
 - Blend 2: https://editor.p5js.org/drskullster/sketches/U4YzxkoOa
+- Exemple Blend Mode  : https://editor.p5js.org/drskullster/sketches/Y-pS-gpJd
         
     
