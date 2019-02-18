@@ -1,443 +1,53 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="fr-BE">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Introduction au design génératif avec p5.js</title>
-   
-    <link rel="stylesheet" href="./js/extras/highlight/styles/dracula.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3000d - Workshop Creative Coding</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body class="impress-not-supported">  
-    <div id="impress" data-transition-duration="500">
-    <div id="welcome" class="step slide" data-rel-x="0" data-rel-y="2000">
-            <h2>Bienvenue :)</h2>
-            <div class="logos">
-                <img src="images/workshop-logos.png" alt="3kd logo"/>
-            </div>
-        </div>
-        <div id="welcome-2" class="step slide" data-rel-x="0" data-rel-y="2000">
-            <h1><strong>#PCD2019</strong></h1>
+<body>
+<header class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Une Introduction au design génératif
+      </h1>
+      <p class="subtitle">
+        <a href="https://github.com/3000d/workshop-generative-design">https://github.com/3000d/workshop-generative-design</a>
+      </p>
+    </div>
+  </div>
+</header>
 
-            <div class="pcd-logo">
-                <a href="https://day.processing.org/pcd-ww.html" target="_blank">
-                    <img src="images/PCD_sqaure_logo.gif" width="500px" alt="3kd logo"/>
-                </a>
-            </div>
-        </div>
-        <div id="title" class="step slide" data-rel-x="1200" data-rel-y="900">
-            <h1>I. Une Introduction au design génératif avec p5.js</h1>
-        </div>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2">Présentation</h2>
 
-        <div id="objectifs" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Objectifs du workshop</h1>            
-            
-            <p>Première approche de la programmation</p>
-            <p>Découvrir le Creative Coding comme moyen d’expression permettant de manipuler le texte pour soutenir la création graphique</p>
-        </div>
-        <div id="deroulement" class="step slide" data-rel-x="2000" data-rel-y="0">
-                <h1>Déroulement du workshop</h1>            
-                <div id="timetable">
-                    <ul>
-                        <li>
-                            <strong>09h30-10h00</strong> Présentations et Introduction
-                        </li>
-                        <li>
-                            <strong>10h00-10h30</strong> Concepts de base
-                        </li>
-                        <li>
-                            <strong>10h30-10h45</strong> pause
-                        </li>
-                        <li>
-                            <strong>11h00-11h30</strong> Introduction à p5.js
-                        </li>
-                        <li>
-                            <strong>11h30-12h30</strong> Expérimentation(s)
-                        </li>
-                        <li>
-                            <strong>12h30-13h30</strong> pause
-                        </li>
-                        <li>
-                            <strong>13h30-14h00</strong> Le texte dans p5.js
-                        </li>
-                        <li>
-                            <strong>14h00-15h30</strong> Expérimentation(s)
-                        </li>
-                        <li>
-                            <strong>15h30-15h45</strong> pause
-                        </li>
-                        <li>
-                            <strong>16h00-17h30</strong> Exporter pour le print
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        <div id="p5js" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1 id="logo-p5"><img src="https://p5js.org/assets/img/p5js.svg" alt="p5js" /></h1>
-            <h2>Librairie javascript</h2>
-            
-            <p><strong>Javascript</strong> Le langage de programmation du web. Est interprété par le navigateur (firefox, chrome…).</p>
-            
-            <p><strong>Librairie</strong> Ensemble de fonctionnalités mises à disposition par d’autres développeurs</p>
+    <p>
+      <a href="presentation/">Slides</a>
+    </p>
+  </div>
+</section>
 
-            <p><h2>Orienté web</h2></p>
-            
-            <p>p5js a été conçu pour fonctionner au sein d’une page web, dans un élément html5 spécifique (canvas) qui peut afficher des éléments graphiques.</p>
-            
-            <p>p5js facilite l’utilisation de canvas, la création dynamique d’éléments html, l’interaction avec l’utilisateur, la manipulation de l’audio et de la vidéo.</p>
-            
-        </div>
-        <div id="concepts-de-base" class="step slide" data-x="0" data-rel-y="1000">
-            <h1>II. Concepts de base de la programmation</h1>
-        </div>
-        <div id="syntaxe" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Syntaxe</h1>
-            <script type="text/p5">
-// ceci est un commentaire
-/*
- * ceci est un commentaire 
- * sur 
- * plusieurs lignes
- */
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2">Sessions</h2>
 
- let maVariable = 10; // <= ceci est une instruction (déclaration d'une variable)
-function setup() {
-    createCanvas(100, 100); // <= ceci est une instruction (appel d'une fonction)
-}
-
-function draw() { // <= les accolades délimitent un bloc de code
-    // les blocs de code contiennent des instructions 
-    // groupées ensemble
-}// <= fin du block de code (ici la définition d'une fonction)
-            </script>
-        </div>
-        <div id="variables" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Variables</h1>
-            <pre><code>
-let ma_variable = 10; // déclaration
-ma_variable = ma_variable * 10; // assignation
-console/log(ma_variable); // affiche 100
-            </code></pre> 
-        </div>
-        <div id="arrays" class="step slide" data-rel-2000" data-rel-y="0">
-            <h1>Tableaux (arrays)</h1>
-            <pre><code>
-let mon_array = [10,38,76,999];
-console.log(mon_array[1]); // affichera 38
-
-// les tableaux peuvent être pratiques pour 
-// regrouper une palette de couleurs, par exemple 
-let palette = ['#3000D0', '#D0BC00', '#4E19FF'];
-            </code></pre> 
-        </div>
-        <div id="structures-de-controle" class="step slide" data-rel-x="2000" data-rel-y="0" >
-            <h1>Structures de contrôle</h1>
-        </div>
-        <div id="conditions" class="step slide" data-rel-x="2000" data-rel-y="0">              
-            <h1>Conditions</h1>
-            <pre><code>
-
-// les conditions sont le résultat d'opérations logiques 
-// ou de comparaison retournant une valeur true/false
-
-if(/*condition*/){
-
-}else{
-
-}
-            </code></pre>
-        </div>
-        <div id="repetition" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Répétition (boucles)</h1>
-            <pre><code>
-for(var i = 0; i &lt; 10; i++){
-    // instructions se répéteront 10 fois
-    // à chaque itération de la boucle, la variable i aura une valeur entre 0 et 9
-}
-            </code></pre>
-        </div>
-        <div id="fonctions" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Fonctions</h1>
-            <pre><code>
-function maFonction(param1, param2){ // les paramètres sont optionnels
-    // instructions
-    // return *valeur* [optionnel] 
-}
-            </code></pre>
-        </div>
-        <div id="objets" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Objets</h1>
-            <pre><code>
-let monObjet = {
-    nom: "world",
-    sayHello : function(){
-         console.log("hello "+this.nom);
-    }
-   
-}
-monObjet.sayHello(); // affiche "Hello world"
-monObjet.nom = "Greg";
-monObjet.sayHello(); // affiche "Hello Greg"
-            </code></pre>           
-        
-        </div>
-        <div id="bibliotheques" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Bibliothèques (libraries)</h1>
-            <p><strong>Exemples</strong></p>
-            <ul>
-            <li>la bibliothèque <a href="https://p5js.org/reference/#/libraries/p5.sound">p5.sound</a></li>
-            <li>la bibliothèque <a href="https://p5js.org/reference/#/libraries/p5.dom">p5.dom</a></li>
-            </ul>
-        </div>
-        <div id="decouvrir-p5" class="step slide" data-x="0" data-rel-y="1000">
-            <h1>III. Découvrir p5js</h1>
-        </div>
-        <div id="structure-sketch" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Structure d'un Sketch</h1>
-            <p>L'éditeur en ligne : <a href="https://editor.p5.js.org">https://editor.p5.js.org</a> </p>
-            <script type="text/p5" data-height="600">
-function setup(){
-    // exécutée une seule fois au chrgement de la page
-}
-
-function draw(){
-    // exécutée 60x par seconde
-}
-            </script>
-        </div>
-        <div id="systeme-de-coordonnees" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Le système de coordonnées</h1>
-            <script type="text/p5" data-height="600" data-preview-width="400">
-function setup(){
-    createCanvas(400, 400); // définit la surface de travail
-    background(0);
-    fill(255);
-    rect(0,0, 100, 100);
-    rect(width-100,0, 100,100);
-    
-    text("hello world", width/2, height/2);
-}
-
-function draw(){
-    
-}
-            </script>
-        </div>
-        <div id="formes" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Formes</h1>
-        </div>
-        <div id="primitives-2d-1" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Primitives 2d</h1>
-            
-            <ul>
-                <li><p><code>point(x,y);</code></li>
-                <li><p><code>line(x1, y1, x2,y2)</code></p></li>
-                <li><p><code>ellipse(x, y, l, h)</code></p></li>
-                <li><p><code>rect(x, y, l, h)</code></p></li>
-                <li><p><code>triangle(x1,y1, x2, y2, x3, y3)</code></p></li>
-                <li><p><code>quad(x1,y1, x2, y2, x3, y3, x4, y4)</code></p></li>
-            </ul>
-        </div>
-        <div id="primitives-2d-2" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Primitives 2d</h1>
-<script type="text/p5" data-height="600" data-preview-width="400">
-function setup() {
-    createCanvas(400,400); // va créer un canvas de 800 pixels de large sur 500 pixels de haut
-}
-    
-function draw(){
-    stroke(2);
-    line(width/2, 0, width*0.5, height);
-    line(0, height/2, width, height/2);
-
-    //  ellipse(width/4, 250, 100, 100);
-
-    //  point(200,250);
-    //  rect(350, 200, 100, 100);
-    //  line(0, 250, 400, 250);
-    // triangle(100,100,200,250,300,300);
-    //  quad(10, 30, 10, 70, 260, 100, 470, 20);
-    fill(255,0,0);
-    arc(width/2, height/2, 100, 100, PI, PI+HALF_PI);
-}
-      
-</script>
-        </div>
-        <div id="attributs-de-formes" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Attributs de formes</h1>
-            <script type="text/p5" data-height="600" data-preview-width="400">
-function setup(){
-    createCanvas(400,400);
-    
-}
-
-function draw(){
-    strokeWeight(4);
-    line(0,0,width, height);
-    //noStroke();
-    rect(width/2, height/2, 80,80);
-    rectMode(CENTER);
-    noFill();
-    rect(width/2, height/2, 80,80);
-    
-}
-            </script>
-        </div>
-        <div id="couleur" class="step slide" data-rel-x="2000" data-rel-y="0">    
-            <h1>Couleurs</h1>
-            <script type="text/p5" data-height="600" data-preview-width="400">
-function setup(){
-    createCanvas(400,400);
-    rectMode(CENTER);
-  background(51); // la fonction background permet de déterminer la couleur de fond
-  colorMode(HSV);
-}
-
-function draw(){
-    // les fonctions utilisant des couleurs peuvent prendre 1, 2, 3 ou 4 paramètres allant de 0 à 255
-    // un seul paramètre représente un niveau de gris allant du noir (0) au blanc (255)
-    fill(255);
-    rect(200, 200, 150, 150);
-
-    // 2 paramèrtres représentent le niveau de gris et l'alpha (la transparence)
-    fill(0, 100);
-    ellipse(200, 125, 125, 125);
-
-    // 3 paramètres représentent respectivement le rouge, le vert et le bleu
-    // le 4eme paramètre représente l'opacité (la transparence de la couleur)
-    fill(255, 0, 255, 100);
-    triangle(200, 125, 125, 200, 275, 200);
-
-    // on constate ici que l'ordre dans lequel on dessine les éléments a une importance
-
-    /** il existe de plus d'autres fonctions permettant de manipuler
-      le remplissage ou le trait des formes
-    **/
-    // fill(*couleur*) définit la couleur de remplissage
-    // noFill() supprime le remplissage
-    // stroke(*couleur*) définit la couleur du trait
-    // noStroke() supprime le trait
-
-    noFill();
-    stroke(0,255, 0);
-    // strokeweight permet de définir l'épaisseur du trait
-    strokeWeight(4);
-    rect(200, 275, 50, 50);
-
-
-}
-            </script>
-        </div>
-        <div id="variables-systeme" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Variables prédéfinies par p5.js</h1>
-            <ul>
-                <li>width | height</li>
-                <li>mouseX | mouseY</li>
-                <li>pmouseX | pmouseY</li>
-                <li>mouseIsPressed</li>
-            </ul>
-        </div>
-        <div id="animation" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Animation</h1>
-            <script type="text/p5" data-height="600" data-preview-width="400">
-let posX = 0;
-function setup(){
-    createCanvas(400,400)
-}
-function draw(){
-    background(0); // pour créer une animation rafraichir l'arrière plan à chaque frame
-    let  s = 200 -posX/2;
-    textSize(s);
-    text(lettre, posX, height/2);
-    s = posX/2;
-    textSize(s);
-    text(lettre, 400-posX, height/2);
-
-    posX = posX + 1; // modifier la variable utilisée pour définir la position X du cercle
-}
-            </script>
-        </div>    
-        <div id="interaction" class="step slide" data-rel-x="2000" data-rel-y="0">     
-            <h1>Interactions</h1>
-<script type="text/p5" data-height="600" data-preview-width="400">
-let lettre = "A";
-
-function setup(){
-    createCanvas(400,400);
-    fill(200,0,120);
-}
-
-function draw(){
-
-    let s = dist(mouseX, mouseY, pmouseX, pmouseY);
-    textSize(s*2);
-
-    if(mouseIsPressed){
-        text(lettre, mouseX, mouseY);
-    }
-}
-function mousePressed(){
-    lettre = char(random(65,117));
-}
-
-function keyPressed(){
-    background(255,50); 
-}
-</script>
-        </div>
- 
-        <div id="texte" class="step slide" data-rel-x="2000" data-rel-y="0">
-            <h1>Afficher du texte avec p5.js</h1>
-            <div class="container">
-            <div>
-                <a href="https://p5js.org/reference/#group-Typography"> Attributs</a>
-                <ul>
-                    <li>textAlign()</li>
-                    <li>textLeading()</li>
-                    <li>textSize()</li>
-                    <li>textStyle()</li>
-                    <li>textWidth()</li>
-                    <li>textAscent()</li>
-                    <li>textDescent()</li>
-                </ul>
-            </div>
-            
-        </div>
-        </div>
-        <div id="texte-1" class="step slide" data-rel-x="2000" data-rel-y="0">    
-            <h1>Le texte dans p5.js</h1>
-            
-         <script type="text/p5" data-height="600" data-preview-width="400">
-/*
-let f; // déclaration de la variable qui contiendra la fonte
-function preload(){
-    f = loadFont("assets/ABeeZee-Regular.otf");
-}
-*/
-
-function setup(){
-    createCanvas(400, 400);
-    textFont("Lato");
-}
-
-function draw(){
-    background(255,10);
-    textSize(map(mouseX, 0, width, 10, 70));
-    text("the quick brown fox jumps over the lazy dog", 0, mouseY,120,40);
-}
-            </script>
-        </div>
-        <div id="export" class="step slide" data-rel-x="2000" data-rel-y="0">    
-            <h1>Exporter pour le print</h1>
-        </div>
-        
-    <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script src="./js/extras/highlight/highlight.pack.js"></script>
-    <script src="./js/impress.js"></script>
-    <script>impress().init()</script>
+    <div class="content">
+      <ul>
+        <li>
+          <a href="workshop-fig/">
+            Fig. (février 2019)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
 </body>
 </html>
